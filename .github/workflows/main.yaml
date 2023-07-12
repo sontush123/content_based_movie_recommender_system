@@ -17,7 +17,7 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Login to Render
-        uses: renderapp/render-action@1.6.0
+        uses: https://github.com/content_based_movie_recommender_system/workflows/main.yml
         with:
           renderToken: ${{ secrets.RENDER_TOKEN }}
 
