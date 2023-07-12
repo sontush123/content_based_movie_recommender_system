@@ -23,8 +23,40 @@ def recommend(movie):
 
     return recommended_movie_names,recommended_movie_posters
 
+# Adjust the size of the first header using CSS styling
+header1_style = "<style>h1.header1{font-size: 32px;}</style>"
+st.markdown(header1_style, unsafe_allow_html=True)
 
-st.header('Movie Recommender System')
+# Display the first header with the adjusted size
+st.markdown("<h1 class='header1'>Movie Recommender System</h1>", unsafe_allow_html=True)
+
+
+
+#st.header('Movie Recommender System')
+
+import webbrowser
+
+def open_github_repo():
+    url = 'https://github.com/sontush123/content_based_movie_recommender_system.git'
+    webbrowser.open_new_tab(url)
+
+
+col1, col2 = st.columns([3, 1])  # Adjust the column widths as needed
+# Adjust the size of the second header using CSS styling
+header2_style = "<style>h1.header2{font-size: 24px;}</style>"
+st.markdown(header2_style, unsafe_allow_html=True)
+
+# Display the second header with the adjusted size
+#st.markdown("<h1 class='header2'>Header 2</h1>", unsafe_allow_html=True)
+# Add the header to the first column
+#col1.header('Welcome to My App')
+col1.markdown("<h1 class='header2'>Welcome to My App</h1>", unsafe_allow_html=True)
+# Add the button to the second column
+if col2.button('CODE OF THIS PROJECT'):
+    open_github_repo()
+
+
+
 movies = pickle.load(open("movie_list.pkl",'rb'))
 #similarity = pickle.load(open(r"C:\Users\prasant\Desktop\DATASCIENCE\Projects\content_based_movie_recommender_system\similarity.pkl",'rb'))
 
