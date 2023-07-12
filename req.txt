@@ -1,0 +1,4 @@
+pickleshare
+streamlit
+requests
+zipp

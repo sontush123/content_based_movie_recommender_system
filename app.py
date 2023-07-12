@@ -25,7 +25,7 @@ def recommend(movie):
 
 
 st.header('Movie Recommender System')
-movies = pickle.load(open(r"C:\Users\prasant\Desktop\DATASCIENCE\Projects\content_based_movie_recommender_system\movie_list.pkl",'rb'))
+movies = pickle.load(open("movie_list.pkl",'rb'))
 #similarity = pickle.load(open(r"C:\Users\prasant\Desktop\DATASCIENCE\Projects\content_based_movie_recommender_system\similarity.pkl",'rb'))
 
 def load_zipped_pkl(zip_file_path, pkl_file_name):
