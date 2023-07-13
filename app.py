@@ -54,7 +54,7 @@ col1.markdown("<h1 class='header2'>Welcome to My App</h1>", unsafe_allow_html=Tr
 # Add the button to the second column
 if col2.button('CODE OF THIS PROJECT'):
     #open_github_repo()
-    st.markdown('<a href="https://github.com/sontush123/content_based_movie_recommender_system.git" target="_blank">Click here to go to Another Website</a>', unsafe_allow_html=True)
+    st.markdown('<a href="https://github.com/sontush123/content_based_movie_recommender_system.git" target="_blank">Click here to visit code reposistory Website</a>', unsafe_allow_html=True)
 
 
 
