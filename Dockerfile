@@ -3,4 +3,4 @@ COPY . /app
 WORKDIR /app
 RUN pip install -r req.txt
 EXPOSE 8501
-CMD ["streamlit", "run", "streamlit_app.py"]
+CMD ["streamlit", "run", "app.py"]
