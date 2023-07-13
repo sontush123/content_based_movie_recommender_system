@@ -2,3 +2,4 @@ pickleshare
 streamlit
 requests
 zipp
+webbrowser
